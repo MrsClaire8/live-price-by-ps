@@ -13,6 +13,8 @@ tabela2=Ceny('scraping.db')
 
 directory_cennik='path'
 
+#nowy komentarz
+
 def get_selected_row(event):
     try:
         global selected_tuple
@@ -720,7 +722,7 @@ def przelicz_command():
         dtype_dic= {'kod_produktu': str, 
             'cena_zakupu' : float}
 
-        cennik = pandas.read_csv("cennik.csv", delimiter=';', dtype=dtype_dic).to_dict()
+        cennik = pandas.read_csv("D:/ok/cennik.csv", delimiter=';', dtype=dtype_dic).to_dict()
         print=(cennik)
 
         a=list(cennik.values())
